@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Simple 320x180 TV banner: black with a clock-like ring -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FF000000" />
+            <size android:width="320dp" android:height="180dp" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:width="110dp" android:height="110dp">
+        <shape android:shape="oval">
+            <stroke android:width="8dp" android:color="#FF4FC3F7" />
+        </shape>
+    </item>
+</layer-list>

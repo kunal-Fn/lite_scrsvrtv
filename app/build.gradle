@@ -1,0 +1,28 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.lite.scrsvrtv'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.lite.scrsvrtv'
+        minSdk 21
+        targetSdk 30          // Android 11 TV
+        versionCode 1
+        versionName '1.0'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+// No external dependencies: plain Android framework only, keeps the APK tiny.
